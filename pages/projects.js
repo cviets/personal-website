@@ -6,10 +6,7 @@ import Image from 'next/image'
 export default function Projects() {
     return (
         <body>
-            <Head>
-                <title>Projects</title>
-                <link rel="icon" href="/flask.png"/>
-            </Head>
+            <MyHead myText="Projects" />
             <MyHeader/>
             <h1 className="page-header">
                 Projects

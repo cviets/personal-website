@@ -4,10 +4,7 @@ import MyHeader from './myheader';
 export default function CV() {
     return (
         <div>
-            <Head>
-                <title>CV</title>
-                <link rel="icon" href="/flask.ico"/>
-            </Head>
+            <MyHead myText="CV" />
             <MyHeader/>
             <h1 className="page-header">Curriculum Vitae</h1>
             <div className="foreground centered-text">

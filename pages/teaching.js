@@ -4,10 +4,7 @@ import MyHeader from './myheader';
 export default function Teaching() {
     return (
         <div>
-            <Head>
-                <title>Teaching</title>
-                <link rel="icon" href="/flask.ico"/>
-            </Head>
+            <MyHead myText="Teaching" />
             <MyHeader/>
             <h1 className="page-header">
                 Teaching

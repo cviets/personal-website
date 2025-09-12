@@ -10,6 +10,7 @@ import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import SkillButton from "../components/skill-button";
 import TypewriterComponent from "../components/typewriter-component"
+import MyHead from "../components/my-head";
 
 const adjectives = ["a whimsical", "a warm-blooded", "a curious", "a soulful", "an enthusiastic", "a cat-loving", "an eclectic", "a sleuthing", "a real-life"];
 const nouns = ["computer scientist", "computational biologist", "neurobiologist", "biophysicist", "web developer", "experimentalist", "bioinformatician", "systems biologist"];
@@ -72,12 +73,7 @@ export default function LandingPage() {
 
     return (
         <body>
-            <Head>
-                <title>Chris Viets</title>
-                <link rel="icon" href="/flask.ico"/>
-            </Head>
-
-            
+            <MyHead myText="Chris Viets" />
             <div className="page-one">
                 <MyHeader/>
                 <div id="RandomIntro">
