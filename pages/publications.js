@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import MyHeader from './myheader';
 
 export default function Publications() {

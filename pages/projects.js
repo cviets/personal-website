@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import MyHeader from './myheader';
 import Link from 'next/link';
 import Image from 'next/image'
