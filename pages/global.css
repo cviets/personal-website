@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-main: #2a2a2a;
+    --bg-toolbar: #1e1e1e;
+    --bg-toolbar-hover: #151515;
+
+    --text-color: #e0e0e0;
+
+    --btn-primary: #9b5de5;
+    --btn-secondary: #cdb4db;
+    --btn-hover: #bfa2db;
+
+    --link-color: #b8c0ff;
+    --border-color: #444444;
+}
+
+body {
+  background-color: #2a2a2a;
+  background-image: url("/sans-1.png");
+  color: #e0e0e0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-attachment: fixed;
+  background-position: -125px -15px;
+  background-repeat: repeat;
+}
+
+.page-one {
+    position: relative;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .page-one {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.foreground{
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navbar-container {
+    position: sticky;
+    top: 0.5rem;
+    z-index: 1;
+}
+
+.navbar {
+  background-color: #1e1e1e;
+  padding: 0.5rem 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+#navbar-right {
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    float: right;
+    margin-left: auto;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar-container {
+    position: relative;
+    top: 0.5rem;
+    z-index: 1;
+  }
+  .navbar {
+    gap: 0.5rem;
+    padding: 0.5rem 2rem;
+  }
+
+  #navbar-right {
+    gap: 1rem;
+    padding-right: 0rem;
+  }
+}
+
+.introduction {
+    padding: 0rem 4rem;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .introduction {
+    padding: 0rem 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+.avatar-container {
+    width: 24rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4rem;
+    text-align: center;
+    flex-grow: 4;
+    flex-shrink: 0;
+    flex-basis: 30rem;
+    padding-top: 1.5rem;
+}
+
+.avatar {
+    width: 16rem;
+    height: 16rem;
+    background-image: url("/profile.png");
+    border-radius: 50%;
+
+    /* Centering on image`s center*/
+    background-position-y: 40%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    margin-right: 2rem;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .avatar-container {
+    width: 100%;
+  }
+
+  .avatar {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+#bottom-half-container > * {
+    padding: 0;
+    margin-right: 4rem;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #bottom-half-container > * {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+}
+
+#bottom-half-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#top-intro {
+    white-space: nowrap;
+    padding: 1rem 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.intro-paragraphs {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal; /* Allow wrapping inside */
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  #top-intro {
+    flex-wrap: wrap;
+    padding: 0rem 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    justify-content: center;
+  }
+
+  .intro-paragraphs {
+    line-height: 1.5;
+  }
+}
+
+#RandomIntro {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 16rem;
+    display: flex;
+    background-color: transparent;
+    }
+
+@media screen and (max-width: 768px) {
+  #RandomIntro {
+    height: 4rem;
+  }
+}
+
+.refresh {
+    background-color: transparent;
+    color: var(--text-color);
+    margin-left: auto;
+    margin-right: 0;
+    border-color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .refresh{ 
+    font-size: 0rem;
+  }
+}
+
+.navbar-small {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#myname {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+button.primary {
+  background-color: #9b5de5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+button.secondary {
+  background-color: #cdb4db;
+  color: #1e1e1e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+a {
+  color: #b8c0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bfa2db;
+}
+
+#Skills {
+    margin: 1rem 4rem;
+    padding: 0.5rem 1rem; 
+    border-radius: 15px;
+    padding-bottom: 2rem;
+    padding-top: 0.001rem;
+    margin-bottom: 1rem;
+}
+
+.SkillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 2rem 4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.skillButton {
+    width: 8rem;
+    height: 8rem;
+    padding-top: 0.5rem;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-header {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  #Skills {
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+  }
+
+  .SkillContainer {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1rem;
+  }
+}
+
+.skillButton img {
+    object-fit: contain;
+    width: 4rem;
+    align-items: center;
+    flex: 1;
+}
+
+.skillButton p {
+    margin-top: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skillButton-noImg {
+    width: 8rem;
+    height: 8rem;
+    padding-top: 0.5rem;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+
+.skillButton-noImg p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skillButton-alt {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    border-radius: 20%;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+}
+
+
+#scroll-down-container {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  bottom: 2rem;
+  left: 0rem;
+  right: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-down-icon {
+  transform: scale(8,2) !important; 
+  color: var(--text-color);
+}
+
+.keep-hidden-scrolldown {
+  transform: scale(0,0) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-down-icon {
+    color: transparent;
+  }
+}
+
+/* Default state: solid cursor (while typing) */
+.Typewriter__cursor {
+  animation: none !important;
+  opacity: 1;
+  display: inline-block;
+  width: 1ch; 
+}
+
+/* Blinking state: used after typing is done */
+.cursor-blink {
+  animation: blink 1s steps(1, start) infinite !important;
+}
+
+.cursor-hidden {
+  animation: none !important;
+  opacity: 0;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.keep-hidden {
+    color: transparent;
+    a:link { color: transparent; }
+    a:visited { color: transparent; }
+    a:hover { color: transparent; }
+    a:active { color: transparent; }
+    opacity: 0;
+}
+
+.page-header {
+  margin-left: 2rem;
+}
+
+.centered-text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.sub-header {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  margin-right: 1rem;
+}
+
+.bullet-points {
+  margin-top: 0.25rem;
+  line-height: 1.25;
+}
+
+.bullet-points li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+#CV-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin-top: 0rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+#CV {
+  width: 75%;
+  height: 100%;
+}
+
+.booleangene-img-container {
+  background-color: transparent;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.research-paragraphs {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal; /* Allow wrapping inside */
+    line-height: 1.5;
+    margin: 1rem 2rem;
+    align-self: flex-start;
+}
+
+.research-img {
+  padding-left: 4rem;
+  padding-right: 2rem
+}
+
+
+#research-foreground {
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .booleangene-img-container {
+    flex-direction: column;
+    margin: 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .research-img {
+    padding: 0rem 1rem;
+  }
+
+  #trackscan-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #booleangene-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #research-foreground {
+    margin: 0rem;
+  }
+
+  .research-paragraphs {
+    margin: 1rem 1rem;
+  }
+}
