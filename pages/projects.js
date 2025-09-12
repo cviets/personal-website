@@ -8,7 +8,7 @@ export default function Projects() {
         <body>
             <Head>
                 <title>Projects</title>
-                <link rel="icon" href="/flask.svg" type="image/svg+xml"/>
+                <link rel="icon" href="/flask.png"/>
             </Head>
             <MyHeader/>
             <h1 className="page-header">
