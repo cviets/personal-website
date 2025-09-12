@@ -1,4 +1,5 @@
 import MyHeader from './myheader';
+import MyHead from "../components/my-head";
 
 export default function CV() {
     return (

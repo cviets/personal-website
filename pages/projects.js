@@ -1,6 +1,7 @@
 import MyHeader from './myheader';
 import Link from 'next/link';
 import Image from 'next/image'
+import MyHead from "../components/my-head";
 
 export default function Projects() {
     return (
