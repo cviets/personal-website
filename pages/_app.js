@@ -1,4 +1,4 @@
-import './global.css'; // Assuming global.css is also inside the "pages" folder
+import './global.css'; 
 import { Analytics } from "@vercel/analytics/next"
 
 export default function MyApp({ Component, pageProps }) {
