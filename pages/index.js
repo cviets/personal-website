@@ -74,7 +74,7 @@ export default function LandingPage() {
         <body>
             <Head>
                 <title>Chris Viets</title>
-                <link rel="icon" href="/flask.svg"/>
+                <link rel="icon" href="/flask.ico"/>
             </Head>
 
             

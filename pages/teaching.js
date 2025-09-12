@@ -6,7 +6,7 @@ export default function Teaching() {
         <div>
             <Head>
                 <title>Teaching</title>
-                <link rel="icon" href="/flask.svg"/>
+                <link rel="icon" href="/flask.ico"/>
             </Head>
             <MyHeader/>
             <h1 className="page-header">
