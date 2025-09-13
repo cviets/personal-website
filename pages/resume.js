@@ -9,7 +9,7 @@ export default function CV() {
             <h1 className="page-header">Curriculum Vitae</h1>
             <div className="foreground centered-text">
                 <ul>
-                    <li>[<a href="../CViets/CV.pdf">Download PDF</a>]</li>
+                    <li>[<a href="../CViets_CV.pdf">Download PDF</a>]</li>
                 </ul>
                 <div id="CV-container">
                     <iframe id="CV" src="../CViets_CV.pdf" />
